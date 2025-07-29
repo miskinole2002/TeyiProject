@@ -1,47 +1,13 @@
-{% extends "base.html" %}
+{% extends "base.html"%}
 {% block title %}Teyi{% endblock %}
 
 {% block content %}
-
-<style>
-  .badge-discount {
-    background-color: #28a745;
-    font-size: 0.75rem;
-    padding: 0.35em 0.5em;
-    color: white;
-    border-radius: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  .badge-sale {
-    background-color: #dc3545;
-    font-size: 0.75rem;
-    padding: 0.35em 0.5em;
-    color: white;
-    border-radius: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  .card-price {
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  .card-price .old-price {
-    text-decoration: line-through;
-    color: #888;
-    font-weight: normal;
-    margin-left: 0.5rem;
-    font-size: 0.9rem;
-  }
-  .rating {
-    color: #ffc107;
-    font-size: 0.9rem;
-  }
-</style>
 
 <!-- Hero Section with Carousel -->
 <div class="container-fluid bg-light py-5">
   <div class="container">
     <div class="row align-items-center">
-
+      
       <!-- Texte à gauche -->
       <div class="col-md-6">
         <span class="badge bg-warning text-dark mb-2">Opening Sale Discount 50%</span>
@@ -66,8 +32,6 @@
               <img src="/static/images/img3.jpg" class="d-block w-100" alt="Grocery 3">
             </div>
           </div>
-
-          <!-- Contrôles -->
           <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
           </button>
@@ -82,11 +46,11 @@
 </div>
 
 <!-- Popular Products -->
-<div class="container my-4">
-  <h2 class="mb-4">Popular Products</h2>
-  <div class="row row-cols-1 row-cols-md-4 g-4">
-
-    <!-- Produit 1 -->
+<div class="container my-5">
+  <h4 class="mb-4 fw-bold">Popular Products</h4>
+  <div class="row g-3">
+    
+    <!-- Product 1 -->
     <div class="col">
       <div class="card h-100">
         <div class="position-absolute top-0 start-0 m-2">
@@ -108,7 +72,7 @@
       </div>
     </div>
 
-    <!-- Produit 2 -->
+    <!-- Product 2 -->
     <div class="col">
       <div class="card h-100">
         <img src="/static/images/img1.jpg" class="card-img-top" alt="NutriChoice Digestive" />
@@ -126,7 +90,7 @@
       </div>
     </div>
 
-    <!-- Produit 3 -->
+    <!-- Product 3 -->
     <div class="col">
       <div class="card h-100">
         <div class="position-absolute top-0 start-0 m-2">
@@ -147,7 +111,7 @@
       </div>
     </div>
 
-    <!-- Produit 4 -->
+    <!-- Product 4 -->
     <div class="col">
       <div class="card h-100">
         <div class="position-absolute top-0 start-0 m-2">
