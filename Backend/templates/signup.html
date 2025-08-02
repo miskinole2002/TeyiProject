@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}inscription{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body p-4">
+          
+          <h2 class="text-center text-primary mb-4">Créer un compte</h2>
+          
+          <form method="post" action="/register">
+            <!-- Nom complet -->
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom complet</label>
+              <input type="text" class="form-control" id="nom" name="nom" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse email</label>
+              <input type="email" class="form-control" id="email" name="email"  placeholder="exemple@mail.com" required>
+            </div>
+
+            <!-- Téléphone -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="+1 514 000 0000">
+            </div>
+
+            <!-- Mot de passe -->
+            <div class="mb-3">
+              <label for="mdp" class="form-label">Mot de passe</label>
+              <input type="password" class="form-control" id="mdp" name="mdp" placeholder="********" required>
+            </div>
+
+            <!-- Confirmation mot de passe -->
+            <!-- <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirmer le mot de passe</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="********" required>
+            </div> -->
+
+            <!-- Adresse -->
+            <!-- <div class="mb-3">
+              <label for="address" class="form-label">Adresse</label>
+              <input type="text" class="form-control" id="address" placeholder="123 Rue Commerce, Ville">
+            </div> -->
+
+            <!-- Bouton -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">S'inscrire</button>
+            </div>
+          </form>
+
+          <div class="text-center mt-3">
+            <small>Déjà un compte ? <a href="/login" class="text-primary">Se connecter</a></small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        {% endblock %}

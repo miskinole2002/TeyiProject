@@ -21,43 +21,60 @@
 
     <div class="container">
      
-           
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Teyi</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li> -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  plus
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">deconnection</a></li>
-                  <li><a class="dropdown-item" href="#">Ajouter produit </a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">voir commande </a></li>
-                </ul>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li> -->
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-primary" href="#">
+      <i class="bi bi-shop"></i> TeyiShop
+    </a>
+    
+    <!-- Bouton burger pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEcommerce" aria-controls="navbarEcommerce" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenu de la navbar -->
+    <div class="collapse navbar-collapse" id="navbarEcommerce">
+
+      <!-- Liens principaux -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="/">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nouveautés</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Promotions</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Catégories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+            <li><a class="dropdown-item" href="#">Vêtements</a></li>
+            <li><a class="dropdown-item" href="#">Électronique</a></li>
+            <li><a class="dropdown-item" href="#">Maison</a></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Barre de recherche -->
+      <form class="d-flex me-3">
+        <input class="form-control me-2 rounded-pill" type="search" placeholder="Rechercher un produit..." aria-label="Search">
+        <button class="btn btn-outline-primary rounded-pill" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+
+      <!-- Icônes utilisateur -->
+      <div class="d-flex">
+        <a href="/register" class="btn btn-outline-secondary me-2 rounded-circle"><i class="bi bi-person"></i></a>
+        <a href="#" class="btn btn-primary rounded-circle position-relative">
+          <i class="bi bi-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
     </div>
     
            
